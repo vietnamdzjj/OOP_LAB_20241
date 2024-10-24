@@ -1,0 +1,1 @@
+Yes, a feature called constructor overloading in Java lets you create more than one constructor in a class. This implies that you can define more than one constructor with distinct parameter lists (signatures), and Java will use the quantity and kind of arguments passed when an object is created to determine which constructor to call.
