@@ -1,0 +1,8 @@
+1/What class should implement the Comparable interface?
+The class that should implement the Comparable interface is Media (or its subclasses, like CompactDisc, DigitalVideoDisc, Book), because these are the objects that you want to be able to compare and sort.
+2/In those classes, how should you implement the compareTo() method be to reflect the ordering that we want?
+The compareTo() method should reflect how the objects are compared based on their attributes.
+3/Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+No, the Comparable interface only allows for one natural ordering. This means that you can only define one compareTo() method in each class. However, you can have multiple sorting options by combining compareTo() with different methods or Comparator objects if you want to allow the user to choose which sorting rule to apply (e.g., sorting by title or sorting by cost).
+4/Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+If DVDs need a different sorting rule, such as sorting by title, then decreasing length, and then cost, you can override the compareTo() method in the DigitalVideoDisc class to handle the DVD-specific sorting.
